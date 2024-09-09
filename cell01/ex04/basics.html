@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+    }
+    .title {
+        font-size: 5dvh;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    a {
+        font-size: larger;
+        text-decoration: none;
+        color: black;
+    }
+    .basic {
+        margin-left: 3dvh;
+    }
+    .image_contain {
+        margin-top: 5dvh;
+        display: flex;
+        gap: 20dvh;
+        justify-content: center;
+        margin-bottom: 5dvh;
+    }
+    img {
+        width: 50dvh;
+        height: 50dvh;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+        font-style: italic;
+        font-family: monospace;
+        margin-right: 3dvh;
+        margin-top: 5dvh;
+    }
+</style>
+<body>
+    <div>
+        <a class="basic" href="#title">Basics</a>
+        <div class="title">Online Shop!</div>
+        <div class="image_contain">
+            <div class="ikea">
+                <img src="https://creativetalkconference.com/content/images/2023/09/ikea-thumbnail.jpg"><br>
+                <a href="https://www.ikea.com/th/th/?gad_source=1&gclid=CjwKCAjwufq2BhAmEiwAnZqw8tIHIxK1DvSccGOXVruzI9fkOJxMoCsErq-CA_XeD8myOz-ydsMIvBoCvcEQAvD_BwE&gclsrc=aw.ds">ikea.com</a>
+            </div>
+            <div class="shopee">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI_FpIImZlZYx6xXH1jNoUyO1gKdlzZ39N2Q&s"><br>
+                <a href="https://shopee.co.th/">shopee.co.th</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            &copy; csaeyang 2024
+        </div>
+    </div>
+</body>
+</html>
