@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.img-one {
+    background-image: url("https://images.services.kitchenstories.io/Y8zJ-CsxWf9d3jERUkEVJicdiiA=/3840x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R1628_final_photo_309.jpg");
+    object-fit: contain;
+    height: 100dvh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.b-block {
+    background-color: black;
+    height: 20dvh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.img-two {
+    background-image: url("https://glutenfreewithme.com/wp-content/uploads/2022/04/IMG_5559-scaled.jpeg");
+    object-fit: contain;
+    height: 100dvh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
