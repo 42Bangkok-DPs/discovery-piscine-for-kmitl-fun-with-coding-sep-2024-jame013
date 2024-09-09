@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    table, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: start;
+        font-size: xx-large;
+        padding-left: 3dvh;
+    }
+    table {
+        width: 100%;
+        height: 100dvh;
+    }
+    @media (max-width: 768px) {
+        table, th {
+            font-size: large;
+            padding-left: 2dvh;
+        }
+    }
+    @media (max-width: 480px) {
+        table, th {
+            font-size: medium;
+            padding-left: 1dvh;
+        }
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th style="background-color: darkkhaki;">First cell</th>
+            <th style="background-color: darksalmon;">Second cell</th>
+        </tr>
+    </table>
+</body>
+</html>
