@@ -1,0 +1,40 @@
+* {
+    font-family: suse;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+.card_contain {
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 50dvh;
+}
+img {
+    width: 50dvh;
+    object-fit: cover;
+}
+tr {
+    display: flex;
+    justify-content: center;
+    margin-top: 2dvh;
+}
+.sm {
+    gap: 3dvh;
+}
+.contact {
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 1dvh;
+    padding-top: 1dvh;
+    padding-bottom: 1dvh;
+    font-size: large;
+}
