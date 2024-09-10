@@ -50,7 +50,7 @@
 </style>
 <body>
     <div>
-        <input id="left" type="number" placeholder="positive integer">
+        <input id="left" type="text" placeholder="positive integer">
         <select id="op" name="operator">
             <option value="+">+</option>
             <option value="-">-</option>
@@ -58,7 +58,7 @@
             <option value="/">/</option>
             <option value="%">%</option>
         </select>
-        <input id="right" type="number" placeholder="positive integer">
+        <input id="right" type="text" placeholder="positive integer">
         <button type="submit" onclick="cal()">Try me!</button>
     </div>
 </body>
@@ -71,7 +71,7 @@
         let left = parseInt(left_);
         let right = parseInt(right_);
 
-        if (left_ === "" || right_ === "") {
+        if (isNaN(left) || isNaN(right)) {
             alert("Error :(")
             console.log("Error :(")
             return false
@@ -113,5 +113,9 @@
         alert(result)
         console.log(result)
     }
+
+    setInterval(() => {
+        alert("Please, use me...");
+    }, 30000);
 </script>
 </html>
