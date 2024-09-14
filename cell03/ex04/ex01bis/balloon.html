@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 100%;
+        transition: 0.3s;
+    }   
+</style>
+<body>
+    <div id="balloon"></div>
+</body>
+<script>
+    let size = 200;
+    let color = ["red", "green", "blue"]
+    let index = 0
+
+    $("#balloon").click(function() {
+        size += 10;
+        index = (index + 1) % color.length;
+        $(this).css({
+            width: `${size}px`,
+            height: `${size}px`,
+            backgroundColor: color[index]
+        });
+        if (size > 420) {
+            size = 200;
+            index = 0;
+        }
+    });
+
+    $("#balloon").mouseleave(function() {
+        if (size > 200) {
+            size -= 5
+            $(this).css({
+                width: `${size}px`,
+                height: `${size}px`,
+                backgroundColor: color[index]
+            });
+            index = (index - 1 + color.length) % color.length;
+        }
+    });
+</script>
+</html>
